@@ -1,6 +1,14 @@
 # Overview
 This repository contains my solution for the final project for the Localization course in Udacity's Self-Driving Car Nanodegree.
 
+[//]: # (Image References)
+[example1]: ./img/example.gif "Video showing the the best particle's sensed positions."
+
+
+The following video shows the best particle's sensed positions, along with the corresponding map ID associations. It can be observed how the green laser sensors from the car (ground truth) nearly overlap the blue laser sensors from the particle.
+
+![Video showing the the best particle's sensed positions][example1]
+
 ---
 ## Original README
 
