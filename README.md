@@ -1,13 +1,15 @@
 # Overview
-This repository contains my solution for the final project for the Localization course in Udacity's Self-Driving Car Nanodegree.
+This project's goal consists of solving a [Simultaneous localization and mapping (SLAM)](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping) problem to locate a robot using a two-dimensional [particle filter](https://en.wikipedia.org/wiki/Monte_Carlo_localization). The robot contains a map of its location and receives initial noisy GNSS estimates. For each sampling step, the robot predicts its position using the yaw rate and velocity information, and then enhances the estimation using sensor measurements and map landmarks. As a result, the final estimations are much more accurate than the ones provided by the GNSS.
 
 [//]: # (Image References)
 [example1]: ./img/example.gif "Video showing the the best particle's sensed positions."
 
-
-The following video shows the best particle's sensed positions, along with the corresponding map ID associations. It can be observed how the green laser sensors from the car (ground truth) nearly overlap the blue laser sensors from the particle.
+The following animation shows the best particle's sensed positions, along with the corresponding map ID associations. It can be observed how the green laser sensors from the car (ground truth) nearly overlap the blue laser sensors from the particle filter (estimation).
 
 ![Video showing the the best particle's sensed positions][example1]
+
+## Project instructions
+The project complies with Udacity's list of [rubric points](https://review.udacity.com/#!/rubrics/1965/view) required to pass the project.
 
 ---
 ## Original README
@@ -149,6 +151,3 @@ The things the grading code is looking for are:
 1. **Accuracy**: your particle filter should localize vehicle position and yaw to within the values specified in the parameters `max_translation_error` and `max_yaw_error` in `src/main.cpp`.
 
 2. **Performance**: your particle filter should complete execution within the time of 100 seconds.
-
-## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
