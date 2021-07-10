@@ -1,4 +1,4 @@
-# Overview
+# Kidnapped Vehicle Project
 This project's goal consists of solving a [Simultaneous localization and mapping (SLAM)](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping) problem to locate a robot using a two-dimensional [particle filter](https://en.wikipedia.org/wiki/Monte_Carlo_localization). The robot contains a map of its location and receives initial noisy GNSS estimates. For each sampling step, the robot predicts its position using the yaw rate and velocity information, and then enhances the estimation using sensor measurements and map landmarks. As a result, the final estimations are much more accurate than the ones provided by the GNSS.
 
 [//]: # (Image References)
